@@ -1,13 +1,12 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Transactions;
+using UserManagement.Domain.BaseEntities;
 using UserManagement.Domain.Transactions;
 
 namespace UserManagement.Domain.Customers
 {
-    public class Customer
+    public class Customer:BaseEntity
     {
-        [Key]
-        public int Id { get; set; }
         [Required]
         public string FirstName { get; set; }
         [Required]
@@ -18,7 +17,6 @@ namespace UserManagement.Domain.Customers
         [Required]
         public string Password { get; set; }
         public float Wallet { get; set; } = 0;
-        public Status Status { get; set; } = Status.Active;
 
         // Navigation property for Transactions
         public List<Transactionn> Transactions { get; set; }
