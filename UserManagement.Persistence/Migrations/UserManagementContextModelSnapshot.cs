@@ -92,13 +92,13 @@ namespace UserManagement.Persistence.Migrations
             modelBuilder.Entity("UserManagement.Domain.Transactions.Transactionn", b =>
                 {
                     b.HasOne("UserManagement.Domain.Customers.Customer", "ReceiverCustomer")
-                        .WithMany()
+                        .WithMany("ReceivedTransactions")
                         .HasForeignKey("ReceiverCustomerId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("UserManagement.Domain.Customers.Customer", "SenderCustomer")
-                        .WithMany("Transactions")
+                        .WithMany("SentTransactions")
                         .HasForeignKey("SenderCustomerId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
@@ -110,7 +110,9 @@ namespace UserManagement.Persistence.Migrations
 
             modelBuilder.Entity("UserManagement.Domain.Customers.Customer", b =>
                 {
-                    b.Navigation("Transactions");
+                    b.Navigation("ReceivedTransactions");
+
+                    b.Navigation("SentTransactions");
                 });
 #pragma warning restore 612, 618
         }

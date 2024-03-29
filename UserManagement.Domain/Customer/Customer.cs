@@ -17,8 +17,7 @@ namespace UserManagement.Domain.Customers
         [Required]
         public string Password { get; set; }
         public float Wallet { get; set; } = 0;
-
-        // Navigation property for Transactions
-        public List<Transactionn> Transactions { get; set; }
+        public List<Transactionn> SentTransactions { get; set; }
+        public List<Transactionn> ReceivedTransactions { get; set; }
     }
 }

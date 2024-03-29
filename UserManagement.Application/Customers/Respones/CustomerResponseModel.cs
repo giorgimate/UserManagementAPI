@@ -14,6 +14,7 @@ namespace UserManagement.Application.Customers.Respones
         public string LastName { get; set; }
         public string Email { get; set; }
         public float Wallet { get; set; }
-        public List<TransactionResponseModel> Transactions { get; set; }
+        public List<TransactionResponseModel> SentTransactions { get; set; }
+        public List<TransactionResponseModel> ReceivedTransactions { get; set; }
     }
 }

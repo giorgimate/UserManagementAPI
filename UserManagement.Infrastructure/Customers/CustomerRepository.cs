@@ -33,7 +33,8 @@ namespace UserManagement.Infrastructure.Customers
         public async Task<List<Customer>> GetAllAsync(CancellationToken cancellationToken)
         {
             return await _context.Set<Customer>()
-                .Include(trn=>trn.Transactions)
+                .Include(trn=>trn.SentTransactions)
+                .Include(trn => trn.ReceivedTransactions)
                 .Where(x=>x.Status == Domain.Status.Active)
                 .ToListAsync(cancellationToken);
         }
@@ -41,7 +42,8 @@ namespace UserManagement.Infrastructure.Customers
         public async Task<Customer> GetAsync(CancellationToken cancellationToken, int customerId)
         {
             return await _context.Set<Customer>()
-                            .Include(trn => trn.Transactions)
+                            .Include(trn => trn.SentTransactions)
+                            .Include(trn => trn.ReceivedTransactions)
                             .FirstOrDefaultAsync(cust => cust.Id == customerId && cust.Status == Domain.Status.Active,cancellationToken);
         }
         public async Task<bool> Exists(CancellationToken cancellationToken, string email)

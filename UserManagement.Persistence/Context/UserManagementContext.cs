@@ -16,20 +16,16 @@ namespace UserManagement.Persistence.Context
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Transactionn>()
-                .HasOne(t => t.SenderCustomer)
-                .WithMany(c => c.Transactions)
-                .HasForeignKey(t => t.SenderCustomerId)
-                .OnDelete(DeleteBehavior.Restrict); // Adjust delete behavior as needed
+                .HasOne(t => t.ReceiverCustomer)
+                .WithMany(c => c.ReceivedTransactions)
+                .HasForeignKey(t => t.ReceiverCustomerId)
+                .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<Transactionn>()
-                .HasOne(t => t.ReceiverCustomer)
-                .WithMany()
-                .HasForeignKey(t => t.ReceiverCustomerId)
-                .OnDelete(DeleteBehavior.Restrict); // Adjust delete behavior as needed
-
-            // Configure other entity relationships if needed
-
-            base.OnModelCreating(modelBuilder);
+                .HasOne(t => t.SenderCustomer)
+                .WithMany(c => c.SentTransactions)
+                .HasForeignKey(t => t.SenderCustomerId)
+                .OnDelete(DeleteBehavior.Restrict); 
         }
     }
 }
