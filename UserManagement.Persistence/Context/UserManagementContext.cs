@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using UserManagement.Domain;
 using UserManagement.Domain.Customers;
 using UserManagement.Domain.Transactions;
 
@@ -12,7 +13,6 @@ namespace UserManagement.Persistence.Context
 
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Transactionn> Transactions { get; set; }
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Transactionn>()

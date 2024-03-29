@@ -26,31 +26,33 @@ namespace UserManagement.Infrastructure
             return await _dbSet.Where(x => x.Status == Status.Active)
                                .ToListAsync(cancellationToken);
         }
-        public async Task<T?> GetAsync(CancellationToken cancellationToken, int id)
+        public async Task<T> GetAsync(CancellationToken cancellationToken, int id)
         {
             return await _dbSet.Where(x => x.Id == id && (x.Status == Status.Active))
                                .FirstOrDefaultAsync(cancellationToken);
         }
-        public async Task CreateAsync(CancellationToken cancellationToken, T entity)
+        public async Task<bool> CreateAsync(CancellationToken cancellationToken, T entity)
         {
             await _dbSet.AddAsync(entity, cancellationToken);
 
-            await _context.SaveChangesAsync(cancellationToken);
+            var changes = await _context.SaveChangesAsync(cancellationToken);
+            return changes > 0;
         }
-        public async Task DeleteAsync(CancellationToken cancellationToken, int id)
+        public async Task<bool> DeleteAsync(CancellationToken cancellationToken, int id)
         {
             var entity = await GetAsync(cancellationToken, id);
 
             if (entity == null)
             {
-                return;
+                return false;
             }
 
             entity.Status = Status.Deleted;
 
             _dbSet.Update(entity);
 
-            await _context.SaveChangesAsync(cancellationToken);
+            var changes = await _context.SaveChangesAsync(cancellationToken);
+            return changes > 0;
         }
         public Task<bool> AnyAsync(CancellationToken cancellationToken, Expression<Func<T, bool>> predicate)
         {

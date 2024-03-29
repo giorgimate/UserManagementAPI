@@ -12,7 +12,7 @@ using UserManagement.Persistence.Context;
 namespace UserManagement.Persistence.Migrations
 {
     [DbContext(typeof(UserManagementContext))]
-    [Migration("20240328164759_init")]
+    [Migration("20240328184934_init")]
     partial class init
     {
         /// <inheritdoc />

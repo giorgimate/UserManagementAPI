@@ -38,8 +38,8 @@ namespace UserManagement.Persistence.Migrations
                     SenderCustomerId = table.Column<int>(type: "int", nullable: false),
                     ReceiverCustomerId = table.Column<int>(type: "int", nullable: false),
                     TransferredAmount = table.Column<float>(type: "real", nullable: false),
-                    Status = table.Column<int>(type: "int", nullable: false),
-                    DateOfTransfer = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    DateOfTransfer = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Status = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
