@@ -44,5 +44,10 @@ namespace UserManagement.Infrastructure.Customers
                             .Include(trn => trn.Transactions)
                             .FirstOrDefaultAsync(cust => cust.Id == customerId && cust.Status == Domain.Status.Active,cancellationToken);
         }
+        public async Task<bool> Exists(CancellationToken cancellationToken, string email)
+        {
+            var result = await base.AnyAsync(cancellationToken, x=>x.Email == email);
+            return result;
+        }
     }
 }

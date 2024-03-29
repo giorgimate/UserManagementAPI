@@ -13,5 +13,6 @@ namespace UserManagement.Application.Customers.Interfaces
         Task<Customer> GetAsync(CancellationToken cancellationToken, int customerId);
         Task<bool> CreateAsync(CancellationToken cancellationToken, Customer customer);
         Task<bool> DeleteAsync(CancellationToken cancellationToken, int customerId);
+        Task<bool> Exists(CancellationToken cancellationToken, string email);
     }
 }

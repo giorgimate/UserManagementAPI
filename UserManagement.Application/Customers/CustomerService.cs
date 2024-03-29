@@ -20,6 +20,11 @@ namespace UserManagement.Application.Customers
         }
          public async Task<bool> CreateAsync(CancellationToken cancellationToken, CustomerRequestPostModel customerRequestModel)
         {
+            var exists = await _repository.Exists(cancellationToken, customerRequestModel.Email);
+            if (exists)
+            {
+                throw new Exception("custome already exist");
+            }
             var entity = customerRequestModel.Adapt<Customer>();
             var result = await _repository.CreateAsync(cancellationToken, entity);
             return result;
