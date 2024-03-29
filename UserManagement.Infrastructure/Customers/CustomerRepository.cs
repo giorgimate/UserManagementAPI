@@ -34,6 +34,7 @@ namespace UserManagement.Infrastructure.Customers
         {
             return await _context.Set<Customer>()
                 .Include(trn=>trn.Transactions)
+                .Where(x=>x.Status == Domain.Status.Active)
                 .ToListAsync(cancellationToken);
         }
 
