@@ -1,0 +1,30 @@
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.WebTools.BrowserLink.Net.ScriptInjectionFilterStream
+Time: 30.03.2024 23:10:31
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 30.03.2024 23:10:32
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 30.03.2024 23:10:47
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 30.03.2024 23:12:22
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 30.03.2024 23:15:10

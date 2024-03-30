@@ -1,0 +1,45 @@
+
+Logged from MIddleware 
+IP = ::1
+Address = https
+Method = GET
+Path = /swagger/index.html
+IsSescured = True
+QueryString = 
+Time = 30.03.2024 23:10:31
+
+Logged from MIddleware 
+IP = ::1
+Address = https
+Method = GET
+Path = /swagger/v1/swagger.json
+IsSescured = True
+QueryString = 
+Time = 30.03.2024 23:10:32
+
+Logged from MIddleware 
+IP = ::1
+Address = https
+Method = POST
+Path = /api/Customer
+IsSescured = True
+QueryString = 
+Time = 30.03.2024 23:10:47
+
+Logged from MIddleware 
+IP = ::1
+Address = https
+Method = POST
+Path = /api/Customer
+IsSescured = True
+QueryString = 
+Time = 30.03.2024 23:12:22
+
+Logged from MIddleware 
+IP = ::1
+Address = https
+Method = DELETE
+Path = /api/Customer
+IsSescured = True
+QueryString = ?id=999
+Time = 30.03.2024 23:15:10

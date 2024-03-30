@@ -28,7 +28,6 @@ namespace UserManagement.Infrastructure.Customers
             var result = await base.DeleteAsync(cancellationToken, customerId);
             return result;
         }
-
         public async Task<List<Customer>> GetAllAsync(CancellationToken cancellationToken)
         {
             return await _context.Set<Customer>()
@@ -37,7 +36,6 @@ namespace UserManagement.Infrastructure.Customers
                 .Where(x=>x.Status == Domain.Status.Active)
                 .ToListAsync(cancellationToken);
         }
-
         public async Task<Customer> GetAsync(CancellationToken cancellationToken, int customerId)
         {
             return await _context.Set<Customer>()

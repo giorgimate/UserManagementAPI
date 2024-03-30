@@ -1,4 +1,5 @@
 
+using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.EntityFrameworkCore;
 using UserManagement.API.Infrastructure.Extensions;
 using UserManagement.Persistence;
@@ -25,7 +26,7 @@ namespace UserManagement.API
 
 
             var app = builder.Build();
-
+            app.UseRequestResponseExceptionsLogging();
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {

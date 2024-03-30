@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using UserManagement.Application.Customers.Interfaces;
 using UserManagement.Application.Customers.Requests;
 using UserManagement.Application.Customers.Respones;
+using UserManagement.Application.Exeptions;
 using UserManagement.Domain.Customers;
 
 namespace UserManagement.Application.Customers
@@ -23,7 +24,7 @@ namespace UserManagement.Application.Customers
             var exists = await _uow.Customers.Exists(cancellationToken, customerRequestModel.Email);
             if (exists)
             {
-                throw new Exception("custome already exist");
+                throw new CustomerAlreadyExistException("Customer Already Exist Exception");
             }
             var entity = customerRequestModel.Adapt<Customer>();
             var result = await _uow.Customers.CreateAsync(cancellationToken, entity);
