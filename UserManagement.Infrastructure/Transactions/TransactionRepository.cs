@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Transactions;
+using UserManagement.Application;
 using UserManagement.Application.Transaction.Interfaces;
 using UserManagement.Domain.Customers;
 using UserManagement.Domain.Transactions;

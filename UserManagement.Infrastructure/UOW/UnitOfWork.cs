@@ -15,7 +15,23 @@ public class UnitOfWork : IUnitOfWork
         Customers = customerRepository;
     }
 
+    
     public ICustomerRepository Customers { get; }
 
     public ITransactionRepository Transactions  {get;}
+
+    public void Dispose()
+    {
+        _dbContext.Dispose();
+    }
+
+    public void SaveChanges()
+    {
+        _dbContext.SaveChanges();
+    }
+
+    public async Task SaveChangesAsync(CancellationToken cancellationToken)
+    {
+        await _dbContext.SaveChangesAsync(cancellationToken);
+    }
 }

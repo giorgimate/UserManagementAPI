@@ -24,6 +24,11 @@ namespace UserManagement.Application.Transaction
         public async Task<bool> CreateAsync(CancellationToken cancellationToken, TransactionRequestPostModel transactionRequestModel)
         {
             // check if sender and reciev customers are 
+            var sender = await _uow.Customers.GetAsync(cancellationToken, transactionRequestModel.SenderCustomerId);
+            var reciever = await _uow.Customers.GetAsync(cancellationToken, transactionRequestModel.ReceiverCustomerId);
+            sender.Wallet -= transactionRequestModel.TransferredAmount;
+            reciever.Wallet += transactionRequestModel.TransferredAmount;
+            await _uow.SaveChangesAsync(cancellationToken);
             var entity = transactionRequestModel.Adapt<Transactionn>();
 
             var result = await _uow.Transactions.CreateAsync(cancellationToken, entity);
