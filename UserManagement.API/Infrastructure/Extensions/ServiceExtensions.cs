@@ -1,4 +1,5 @@
-﻿using UserManagement.Application.Customers;
+﻿using UserManagement.Application;
+using UserManagement.Application.Customers;
 using UserManagement.Application.Customers.Interfaces;
 using UserManagement.Application.Transaction;
 using UserManagement.Application.Transaction.Interfaces;
@@ -16,6 +17,8 @@ namespace UserManagement.API.Infrastructure.Extensions
 
             services.AddScoped<ITransactionService, TransactionService>();
             services.AddScoped<ITransactionRepository, TransactionRepository>();
+
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
         }
     }
 }

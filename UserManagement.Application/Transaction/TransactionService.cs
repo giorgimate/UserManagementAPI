@@ -15,10 +15,10 @@ namespace UserManagement.Application.Transaction
 {
     public class TransactionService : ITransactionService
     {
-        private readonly ITransactionRepository _repository;
-        public TransactionService(ITransactionRepository repository)
+        IUnitOfWork _uow;
+        public TransactionService(IUnitOfWork uow)
         {
-            _repository = repository;
+            _uow = uow;
         }
 
         public async Task<bool> CreateAsync(CancellationToken cancellationToken, TransactionRequestPostModel transactionRequestModel)
@@ -26,13 +26,13 @@ namespace UserManagement.Application.Transaction
             // check if sender and reciev customers are 
             var entity = transactionRequestModel.Adapt<Transactionn>();
 
-            var result = await _repository.CreateAsync(cancellationToken, entity);
+            var result = await _uow.Transactions.CreateAsync(cancellationToken, entity);
             return result;
         }
 
         public async Task<List<TransactionResponseModel>> GetAllAsync(CancellationToken cancellationToken)
         {
-            var entities = await _repository.GetAllAsync(cancellationToken);
+            var entities = await _uow.Transactions.GetAllAsync(cancellationToken);
             var result = entities.Adapt<List<TransactionResponseModel>>();
             return result;
         }

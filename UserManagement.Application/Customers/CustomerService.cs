@@ -13,40 +13,40 @@ namespace UserManagement.Application.Customers
 {
     public class CustomerService : ICustomerService
     {
-        private readonly ICustomerRepository _repository;
-        public CustomerService(ICustomerRepository repository)
+        IUnitOfWork _uow;
+        public CustomerService(IUnitOfWork uow)
         {
-            _repository = repository;
+            _uow = uow;
         }
          public async Task<bool> CreateAsync(CancellationToken cancellationToken, CustomerRequestPostModel customerRequestModel)
         {
-            var exists = await _repository.Exists(cancellationToken, customerRequestModel.Email);
+            var exists = await _uow.Customers.Exists(cancellationToken, customerRequestModel.Email);
             if (exists)
             {
                 throw new Exception("custome already exist");
             }
             var entity = customerRequestModel.Adapt<Customer>();
-            var result = await _repository.CreateAsync(cancellationToken, entity);
+            var result = await _uow.Customers.CreateAsync(cancellationToken, entity);
             return result;
         }
 
         public async Task<bool> DeleteAsync(CancellationToken cancellationToken, int id)
         {
-            var entity = await _repository.GetAsync(cancellationToken,id);
-            var result = await _repository.DeleteAsync(cancellationToken, entity.Id);
+            var entity = await _uow.Customers.GetAsync(cancellationToken,id);
+            var result = await _uow.Customers.DeleteAsync(cancellationToken, entity.Id);
             return result;
         }
 
       public async  Task<List<CustomerResponseModel>> GetAllAsync(CancellationToken cancellationToken)
         {
-            var entities = await _repository.GetAllAsync(cancellationToken);
+            var entities = await _uow.Customers.GetAllAsync(cancellationToken);
             var result = entities.Adapt<List<CustomerResponseModel>>();
             return result;
         }
 
       public async  Task<CustomerResponseModel> GetAsync(CancellationToken cancellationToken, int id)
         {
-            var result = await _repository.GetAsync(cancellationToken,id);
+            var result = await _uow.Customers.GetAsync(cancellationToken,id);
             return result.Adapt<CustomerResponseModel>();
         }
     }
