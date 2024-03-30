@@ -1,4 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using System.Security.Cryptography;
+using System.Text;
 using UserManagement.Application.Customers.Interfaces;
 using UserManagement.Domain.Customers;
 using UserManagement.Persistence.Context;
@@ -7,6 +9,7 @@ namespace UserManagement.Infrastructure.Customers
 {
     public class CustomerRepository : BaseRepository<Customer>, ICustomerRepository
     {
+        const string SECRET_KEY = "tera";
         public CustomerRepository(UserManagementContext context) : base(context)
         {
             
@@ -14,6 +17,8 @@ namespace UserManagement.Infrastructure.Customers
 
         public async Task<bool> CreateAsync(CancellationToken cancellationToken, Customer customer)
         {
+            var password = GenerateHash(customer.Password + SECRET_KEY);
+            customer.Password = password;
             var result = await base.CreateAsync(cancellationToken, customer);
             return result;
         }
@@ -44,6 +49,22 @@ namespace UserManagement.Infrastructure.Customers
         {
             var result = await base.AnyAsync(cancellationToken, x=>x.Email == email);
             return result;
+        }
+        private string GenerateHash(string input)
+        {
+            using (SHA512 sha512 = SHA512.Create())
+            {
+                var bytes = Encoding.ASCII.GetBytes(input);
+                var hashBytes = sha512.ComputeHash(bytes);
+
+                StringBuilder sb = new StringBuilder();
+                for (int i = 0; i < hashBytes.Length; i++)
+                {
+                    sb.Append(hashBytes[i].ToString("X2"));
+                }
+
+                return sb.ToString();
+            }
         }
     }
 }
