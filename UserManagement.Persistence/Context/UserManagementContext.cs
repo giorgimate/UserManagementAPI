@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using UserManagement.Domain;
 using UserManagement.Domain.Customers;
 using UserManagement.Domain.Transactions;
 

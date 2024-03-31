@@ -57,6 +57,20 @@ namespace UserManagement.API.Infrastructure.Middlewares
             Title = exception.Message;
             LogLevel = LogLevel.Information;
         }
+        private void HandleException(AmmountException exception)
+        {
+            Status = (int)HttpStatusCode.NotFound;
+            Type = "https://datatracker.ietf.org/doc/html/rfc7231#section-6.5.4";
+            Title = exception.Message;
+            LogLevel = LogLevel.Information;
+        }
+        private void HandleException(CustomerNotFoundException exception)
+        {
+            Status = (int)HttpStatusCode.NotFound;
+            Type = "https://datatracker.ietf.org/doc/html/rfc7231#section-6.5.4";
+            Title = exception.Message;
+            LogLevel = LogLevel.Information;
+        }
 
         private void HandleException(Exception exception)
         {

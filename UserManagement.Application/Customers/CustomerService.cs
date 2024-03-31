@@ -1,9 +1,4 @@
 ﻿using Mapster;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UserManagement.Application.Customers.Interfaces;
 using UserManagement.Application.Customers.Requests;
 using UserManagement.Application.Customers.Respones;
@@ -21,6 +16,10 @@ namespace UserManagement.Application.Customers
         }
          public async Task<bool> CreateAsync(CancellationToken cancellationToken, CustomerRequestPostModel customerRequestModel)
         {
+            if (customerRequestModel.Wallet < 0)
+            {
+                throw new AmmountException("Ammount Exception");
+            }
             var exists = await _uow.Customers.Exists(cancellationToken, customerRequestModel.Email);
             if (exists)
             {
@@ -34,6 +33,10 @@ namespace UserManagement.Application.Customers
         public async Task<bool> DeleteAsync(CancellationToken cancellationToken, int id)
         {
             var entity = await _uow.Customers.GetAsync(cancellationToken,id);
+            if(entity == null)
+            {
+                throw new CustomerNotFoundException("Customer Not Found Exception");
+            }
             var result = await _uow.Customers.DeleteAsync(cancellationToken, entity.Id);
             return result;
         }
@@ -41,6 +44,10 @@ namespace UserManagement.Application.Customers
       public async  Task<List<CustomerResponseModel>> GetAllAsync(CancellationToken cancellationToken)
         {
             var entities = await _uow.Customers.GetAllAsync(cancellationToken);
+            if (entities == null)
+            {
+                throw new CustomerNotFoundException("Customer Not Found Exception");
+            }
             var result = entities.Adapt<List<CustomerResponseModel>>();
             return result;
         }
@@ -48,6 +55,10 @@ namespace UserManagement.Application.Customers
       public async  Task<CustomerResponseModel> GetAsync(CancellationToken cancellationToken, int id)
         {
             var result = await _uow.Customers.GetAsync(cancellationToken,id);
+            if (result == null)
+            {
+                throw new CustomerNotFoundException("Customer Not Found Exception");
+            }
             return result.Adapt<CustomerResponseModel>();
         }
     }

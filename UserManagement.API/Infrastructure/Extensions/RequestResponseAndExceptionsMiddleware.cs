@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Diagnostics;
-using UserManagement.API.Infrastructure.Middlewares;
+﻿using UserManagement.API.Infrastructure.Middlewares;
 
 namespace UserManagement.API.Infrastructure.Extensions
 {

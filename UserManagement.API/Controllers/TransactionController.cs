@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using UserManagement.Application.Customers.Requests;
+﻿using Microsoft.AspNetCore.Mvc;
 using UserManagement.Application.Transaction.Interfaces;
 using UserManagement.Application.Transaction.Requests;
 

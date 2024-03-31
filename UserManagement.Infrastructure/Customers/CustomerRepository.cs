@@ -2,6 +2,7 @@
 using System.Security.Cryptography;
 using System.Text;
 using UserManagement.Application.Customers.Interfaces;
+using UserManagement.Application.Customers.Requests;
 using UserManagement.Domain.Customers;
 using UserManagement.Persistence.Context;
 
@@ -42,6 +43,12 @@ namespace UserManagement.Infrastructure.Customers
                             .Include(trn => trn.SentTransactions)
                             .Include(trn => trn.ReceivedTransactions)
                             .FirstOrDefaultAsync(cust => cust.Id == customerId && cust.Status == Domain.Status.Active,cancellationToken);
+        }
+        public async Task<Customer> LoginAsync(CancellationToken cancellationToken, CustomerLoginModel loginModel)
+        {
+            var hashedPassword = GenerateHash(loginModel.Password + SECRET_KEY);
+            var customer = await _dbSet.SingleOrDefaultAsync(u=>u.Email == loginModel.Email && u.Password == hashedPassword, cancellationToken);
+            return customer;
         }
         public async Task<bool> Exists(CancellationToken cancellationToken, string email)
         {

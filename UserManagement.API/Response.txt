@@ -112,3 +112,747 @@ Status code: 200
 Headers: 
 Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
 Time: 31.03.2024 13:35:36
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 13:44:08
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 13:44:15
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 13:44:18
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 13:44:38
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 13:44:42
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.WebTools.BrowserLink.Net.ScriptInjectionFilterStream
+Time: 31.03.2024 14:10:37
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 14:10:38
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 14:10:43
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.WebTools.BrowserLink.Net.ScriptInjectionFilterStream
+Time: 31.03.2024 14:31:31
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 14:31:32
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.WebTools.BrowserLink.Net.ScriptInjectionFilterStream
+Time: 31.03.2024 14:31:42
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 14:31:43
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.WebTools.BrowserLink.Net.ScriptInjectionFilterStream
+Time: 31.03.2024 14:35:34
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 14:35:34
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.WebTools.BrowserLink.Net.ScriptInjectionFilterStream
+Time: 31.03.2024 14:36:30
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 14:36:31
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 14:36:51
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 14:37:16
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.WebTools.BrowserLink.Net.ScriptInjectionFilterStream
+Time: 31.03.2024 14:39:00
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 14:39:00
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 14:39:18
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 14:39:24
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 14:39:32
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.WebTools.BrowserLink.Net.ScriptInjectionFilterStream
+Time: 31.03.2024 14:40:11
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 14:40:11
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.WebTools.BrowserLink.Net.ScriptInjectionFilterStream
+Time: 31.03.2024 14:40:32
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 14:40:33
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 14:40:52
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 14:41:10
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 14:41:18
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.WebTools.BrowserLink.Net.ScriptInjectionFilterStream
+Time: 31.03.2024 14:42:06
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 14:42:07
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.WebTools.BrowserLink.Net.ScriptInjectionFilterStream
+Time: 31.03.2024 14:42:33
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 14:42:33
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.WebTools.BrowserLink.Net.ScriptInjectionFilterStream
+Time: 31.03.2024 14:43:30
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 14:43:30
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.WebTools.BrowserLink.Net.ScriptInjectionFilterStream
+Time: 31.03.2024 14:47:49
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 14:47:49
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 14:48:03
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 14:48:20
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.WebTools.BrowserLink.Net.ScriptInjectionFilterStream
+Time: 31.03.2024 14:48:49
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 14:48:50
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 14:49:04
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.WebTools.BrowserLink.Net.ScriptInjectionFilterStream
+Time: 31.03.2024 14:50:22
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 14:50:23
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 14:50:32
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.WebTools.BrowserLink.Net.ScriptInjectionFilterStream
+Time: 31.03.2024 14:52:28
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 14:52:29
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 14:52:47
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.WebTools.BrowserLink.Net.ScriptInjectionFilterStream
+Time: 31.03.2024 14:53:34
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 14:53:34
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 14:53:41
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.WebTools.BrowserLink.Net.ScriptInjectionFilterStream
+Time: 31.03.2024 14:54:19
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 14:54:20
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 14:54:33
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.WebTools.BrowserLink.Net.ScriptInjectionFilterStream
+Time: 31.03.2024 14:59:14
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 14:59:15
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 14:59:47
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.WebTools.BrowserLink.Net.ScriptInjectionFilterStream
+Time: 31.03.2024 15:04:23
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 15:04:23
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 15:04:42
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.WebTools.BrowserLink.Net.ScriptInjectionFilterStream
+Time: 31.03.2024 15:05:18
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 15:05:19
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 15:05:31
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.WebTools.BrowserLink.Net.ScriptInjectionFilterStream
+Time: 31.03.2024 15:11:22
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 15:11:23
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.WebTools.BrowserLink.Net.ScriptInjectionFilterStream
+Time: 31.03.2024 15:22:45
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 15:22:46
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.WebTools.BrowserLink.Net.ScriptInjectionFilterStream
+Time: 31.03.2024 15:35:26
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 15:35:27
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 15:35:50
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.WebTools.BrowserLink.Net.ScriptInjectionFilterStream
+Time: 31.03.2024 18:08:43
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 18:08:44
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 18:09:05
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 18:09:22
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 18:09:29
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 18:09:37
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 18:09:44
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.WebTools.BrowserLink.Net.ScriptInjectionFilterStream
+Time: 31.03.2024 18:26:34
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 18:26:35
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.WebTools.BrowserLink.Net.ScriptInjectionFilterStream
+Time: 31.03.2024 18:28:12
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.WebTools.BrowserLink.Net.ScriptInjectionFilterStream
+Time: 31.03.2024 18:28:15
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 18:28:16
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 18:28:27
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 18:28:48
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 18:29:26
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 18:29:29
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 18:29:34
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.WebTools.BrowserLink.Net.ScriptInjectionFilterStream
+Time: 31.03.2024 18:29:57
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 18:29:57
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 18:30:09
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.WebTools.BrowserLink.Net.ScriptInjectionFilterStream
+Time: 31.03.2024 18:31:08
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 18:31:09
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 18:31:23
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 18:31:36
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 18:31:45
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 18:31:51
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 18:31:55
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 18:32:14
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 18:32:30
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.WebTools.BrowserLink.Net.ScriptInjectionFilterStream
+Time: 31.03.2024 18:34:08
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 18:34:08
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 18:34:27
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 18:34:32
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.WebTools.BrowserLink.Net.ScriptInjectionFilterStream
+Time: 31.03.2024 18:34:59
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 18:35:00
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 18:35:13
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.WebTools.BrowserLink.Net.ScriptInjectionFilterStream
+Time: 31.03.2024 18:35:49
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 18:35:49
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 18:35:56
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.WebTools.BrowserLink.Net.ScriptInjectionFilterStream
+Time: 31.03.2024 18:38:07
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 18:38:08
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 18:38:15
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.WebTools.BrowserLink.Net.ScriptInjectionFilterStream
+Time: 31.03.2024 18:38:42
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 18:38:43
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.WebTools.BrowserLink.Net.ScriptInjectionFilterStream
+Time: 31.03.2024 18:39:11
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 18:39:11
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 18:39:56
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 18:40:09
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 18:40:19
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 18:40:57
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 18:41:04
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 18:41:30
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 18:41:37
