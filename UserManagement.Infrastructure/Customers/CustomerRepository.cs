@@ -31,18 +31,11 @@ namespace UserManagement.Infrastructure.Customers
         }
         public async Task<List<Customer>> GetAllAsync(CancellationToken cancellationToken)
         {
-            return await _context.Set<Customer>()
-                .Include(trn=>trn.SentTransactions)
-                .Include(trn => trn.ReceivedTransactions)
-                .Where(x=>x.Status == Domain.Status.Active)
-                .ToListAsync(cancellationToken);
+            return await base.GetAllAsync(cancellationToken);
         }
         public async Task<Customer> GetAsync(CancellationToken cancellationToken, int customerId)
         {
-            return await _context.Set<Customer>()
-                            .Include(trn => trn.SentTransactions)
-                            .Include(trn => trn.ReceivedTransactions)
-                            .FirstOrDefaultAsync(cust => cust.Id == customerId && cust.Status == Domain.Status.Active,cancellationToken);
+            return await base.GetAsync(cancellationToken, customerId);
         }
         public async Task<Customer> LoginAsync(CancellationToken cancellationToken, CustomerLoginModel loginModel)
         {

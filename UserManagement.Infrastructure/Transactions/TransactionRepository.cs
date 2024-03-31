@@ -28,11 +28,7 @@ namespace UserManagement.Infrastructure.Transactions
 
         public async Task<List<Transactionn>> GetAllAsync(CancellationToken cancellationToken)
         {
-            return await _context.Set<Transactionn>()
-               .Include(trn => trn.SenderCustomer)
-               .Include(trn => trn.ReceiverCustomer)
-               .Where(x => x.Status == Domain.Status.Active)
-               .ToListAsync(cancellationToken);
+            return await base.GetAllAsync(cancellationToken);
         }
     }
 }
