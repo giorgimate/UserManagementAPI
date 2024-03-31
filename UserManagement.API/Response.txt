@@ -28,3 +28,87 @@ Status code: 200
 Headers: 
 Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
 Time: 30.03.2024 23:15:10
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.WebTools.BrowserLink.Net.ScriptInjectionFilterStream
+Time: 31.03.2024 13:03:06
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 13:03:10
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 13:03:50
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.WebTools.BrowserLink.Net.ScriptInjectionFilterStream
+Time: 31.03.2024 13:09:16
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 13:09:17
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 13:09:40
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 13:09:47
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.WebTools.BrowserLink.Net.ScriptInjectionFilterStream
+Time: 31.03.2024 13:34:52
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 13:34:53
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 13:34:58
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 13:35:09
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 13:35:14
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 13:35:27
+
+Logged from Middleware 
+Status code: 200
+Headers: 
+Body: Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream
+Time: 31.03.2024 13:35:36
