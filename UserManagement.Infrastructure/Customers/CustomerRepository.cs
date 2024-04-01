@@ -29,14 +29,17 @@ namespace UserManagement.Infrastructure.Customers
             var result = await base.DeleteAsync(cancellationToken, customerId);
             return result;
         }
+
         public async Task<List<Customer>> GetAllAsync(CancellationToken cancellationToken)
         {
             return await base.GetAllAsync(cancellationToken);
         }
+
         public async Task<Customer> GetAsync(CancellationToken cancellationToken, int customerId)
         {
             return await base.GetAsync(cancellationToken, customerId);
         }
+
         public async Task<Customer> LoginAsync(CancellationToken cancellationToken, CustomerLoginModel loginModel)
         {
             var hashedPassword = GenerateHash(loginModel.Password + SECRET_KEY);

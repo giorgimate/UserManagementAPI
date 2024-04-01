@@ -13,25 +13,29 @@ namespace UserManagement.API.Controllers
         {
             _service = service;
         }
+
         [HttpPost]
         public async Task<IActionResult> Create(CancellationToken cancellationToken, CustomerRequestPostModel CustomerPostModel)
         {
             var result = await _service.CreateAsync(cancellationToken, CustomerPostModel);
             return Ok(result);
         }
+
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(CancellationToken cancellationToken, int id)
         {
             var result = await _service.GetAsync(cancellationToken,id);
             return Ok(result);
         }
+
         [HttpGet]
         public async Task<IActionResult> GetAll(CancellationToken cancellationToken)
         {
             var result = await _service.GetAllAsync(cancellationToken);
             return Ok(result);
         }
-        [HttpDelete]
+
+        [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(CancellationToken cancellationToken, int id)
         {
             var result = await _service.DeleteAsync(cancellationToken, id);

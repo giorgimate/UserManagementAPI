@@ -9,12 +9,12 @@ namespace UserManagement.Application.Customers
 {
     public class CustomerService : ICustomerService
     {
-        IUnitOfWork _uow;
+        private readonly IUnitOfWork _uow;
         public CustomerService(IUnitOfWork uow)
         {
             _uow = uow;
         }
-         public async Task<bool> CreateAsync(CancellationToken cancellationToken, CustomerRequestPostModel customerRequestModel)
+        public async Task<bool> CreateAsync(CancellationToken cancellationToken, CustomerRequestPostModel customerRequestModel)
         {
             if (customerRequestModel.Wallet < 0)
             {
@@ -33,7 +33,7 @@ namespace UserManagement.Application.Customers
         public async Task<bool> DeleteAsync(CancellationToken cancellationToken, int id)
         {
             var entity = await _uow.Customers.GetAsync(cancellationToken,id);
-            if(entity == null)
+            if(entity is null)
             {
                 throw new CustomerNotFoundException("Customer Not Found Exception");
             }
@@ -44,7 +44,7 @@ namespace UserManagement.Application.Customers
       public async  Task<List<CustomerResponseModel>> GetAllAsync(CancellationToken cancellationToken)
         {
             var entities = await _uow.Customers.GetAllAsync(cancellationToken);
-            if (entities == null)
+            if (entities is null)
             {
                 throw new CustomerNotFoundException("Customer Not Found Exception");
             }
@@ -55,7 +55,7 @@ namespace UserManagement.Application.Customers
       public async  Task<CustomerResponseModel> GetAsync(CancellationToken cancellationToken, int id)
         {
             var result = await _uow.Customers.GetAsync(cancellationToken,id);
-            if (result == null)
+            if (result is null)
             {
                 throw new CustomerNotFoundException("Customer Not Found Exception");
             }

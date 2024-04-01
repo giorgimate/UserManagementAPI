@@ -9,7 +9,7 @@ namespace UserManagement.Application.Transaction
 {
     public class TransactionService : ITransactionService
     {
-        IUnitOfWork _uow;
+        private readonly IUnitOfWork _uow;
         public TransactionService(IUnitOfWork uow)
         {
             _uow = uow;
@@ -23,7 +23,7 @@ namespace UserManagement.Application.Transaction
             }
             var sender = await _uow.Customers.LoginAsync(cancellationToken, transactionRequestModel.CustomerLoginModel);
             var reciever = await _uow.Customers.GetAsync(cancellationToken, transactionRequestModel.ReceiverCustomerId);
-            if(sender == null || reciever  == null)
+            if(sender is null || reciever  is null)
             {
                 throw new CustomerNotFoundException("Sender Or Reciever Not Found ESxception");
             }
@@ -48,7 +48,7 @@ namespace UserManagement.Application.Transaction
         public async Task<List<TransactionResponseModel>> GetAllAsync(CancellationToken cancellationToken)
         {
             var entities = await _uow.Transactions.GetAllAsync(cancellationToken);
-            if(entities == null)
+            if(entities is null)
             {
                 throw new TransactionNotFoundException("Transactions Not Found Exception");
             }

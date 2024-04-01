@@ -3,7 +3,7 @@ using UserManagement.Application.Transaction.Interfaces;
 
 namespace UserManagement.Application
 {
-    public interface IUnitOfWork : IDisposable
+    public interface IUnitOfWork 
     {
          ICustomerRepository Customers { get; }
          ITransactionRepository Transactions { get; }

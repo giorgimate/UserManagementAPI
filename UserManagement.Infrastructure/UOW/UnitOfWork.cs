@@ -3,7 +3,7 @@ using UserManagement.Application.Transaction.Interfaces;
 using UserManagement.Application;
 using UserManagement.Persistence.Context;
 
-public class UnitOfWork : IUnitOfWork
+public class UnitOfWork : IUnitOfWork, IDisposable
 {
     protected readonly UserManagementContext _dbContext;
 
